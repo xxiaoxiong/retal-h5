@@ -5,7 +5,7 @@ import { ref } from 'vue';
 
 // 基础URL配置
 // const API_BASE_URL = 'http://localhost:3000/api';
-const API_BASE_URL = 'https://test-api.your-domain.com/api';
+const API_BASE_URL = 'https://rental-backend-nine.vercel.app/api';
 // 修改为内网穿透的地址
 // const API_BASE_URL = 'https://你的ngrok地址/api';  // 例如：https://abcd1234.ngrok.io/api
 // 或使用条件判断，根据环境切换
