@@ -1,0 +1,167 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/property/detail",
+			"style": {
+				"navigationBarTitleText": "房源详情"
+			}
+		},
+		{
+			"path": "pages/landlord/dashboard",
+			"style": {
+				"navigationBarTitleText": "房东中心"
+			}
+		},
+		{
+			"path": "pages/landlord/properties",
+			"style": {
+				"navigationBarTitleText": "我的房源"
+			}
+		},
+		{
+			"path": "pages/landlord/property-edit",
+			"style": {
+				"navigationBarTitleText": "编辑房源"
+			}
+		},
+		{
+			"path": "pages/landlord/appointments",
+			"style": {
+				"navigationBarTitleText": "预约管理"
+			}
+		},
+		{
+			"path": "pages/landlord/inquiries",
+			"style": {
+				"navigationBarTitleText": "咨询管理"
+			}
+		},
+		{
+			"path": "pages/landlord/inquiry-detail",
+			"style": {
+				"navigationBarTitleText": "咨询详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/landlord/login",
+			"style": {
+				"navigationBarTitleText": "房东登录"
+			}
+		},
+		{
+			"path": "pages/landlord/register",
+			"style": {
+				"navigationBarTitleText": "房东注册"
+			}
+		},
+		{
+			"path": "pages/booking/form",
+			"style": {
+				"navigationBarTitleText": "预约看房"
+			}
+		},
+		{
+			"path": "pages/inquiry/chat",
+			"style": {
+				"navigationBarTitleText": "在线咨询"
+			}
+		},
+		{
+			"path": "pages/tenant/property-detail",
+			"style": {
+				"navigationBarTitleText": "房源详情"
+			}
+		},
+		{
+			"path": "pages/tenant/appointment",
+			"style": {
+				"navigationBarTitleText": "预约看房"
+			}
+		},
+		{
+			"path": "pages/tenant/login",
+			"style": {
+				"navigationBarTitleText": "租户登录"
+			}
+		},
+		{
+			"path": "pages/tenant/register",
+			"style": {
+				"navigationBarTitleText": "租户注册"
+			}
+		},
+		{
+			"path": "pages/tenant/home",
+			"style": {
+				"navigationBarTitleText": "租户主页"
+			}
+		},
+		{
+			"path": "pages/tenant/inquiry",
+			"style": {
+				"navigationBarTitleText": "提交咨询"
+			}
+		},
+		{
+			"path": "pages/tenant/inquiry-history",
+			"style": {
+				"navigationBarTitleText": "咨询历史"
+			}
+		},
+		{
+			"path": "pages/tenant/property-list",
+			"style": {
+				"navigationBarTitleText": "房源列表"
+			}
+		},
+		{
+			"path": "pages/tenant/rental-guide",
+			"style": {
+				"navigationBarTitleText": "租房攻略"
+			}
+		},
+		{
+			"path": "pages/landlord/banner-management",
+			"style": {
+				"navigationBarTitleText": "轮播图管理"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "租房小程序",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#4CD964",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tenant/property-list",
+				"text": "找房"
+			},
+			{
+				"pagePath": "pages/landlord/dashboard",
+				"text": "房东"
+			},
+			{
+				"pagePath": "pages/tenant/home",
+				"text": "租户"
+			}
+		]
+	}
+}
