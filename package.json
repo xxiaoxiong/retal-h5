@@ -33,7 +33,10 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
-    "deploy": "npm run build:h5 && node deploy.js"
+    "deploy": "npm run build:h5 && node deploy.js",
+    "deploy:unicloud": "npm run build:h5 && node uniCloud-deploy.js",
+    "deploy:vercel": "npm run build:h5 && node vercel-deploy.js",
+    "deploy:netlify": "npm run build:h5 && node netlify-deploy.js"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-4030620241128001",
