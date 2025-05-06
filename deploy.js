@@ -69,9 +69,8 @@ try {
 
     // 推送到GitHub
     console.log('准备推送到GitHub...');
-    // 使用含有令牌的URL（替换为实际值）
-    const tokenUrl = 'https://xxiaoxiong:ghp_YOUR_ACTUAL_TOKEN_HERE@github.com/xxiaoxiong/retal-h5.git';
-    execSync(`git push -f ${tokenUrl} ${deployBranch}`);
+    // 使用origin作为远程仓库名称，不要在代码中包含令牌
+    execSync(`git push -f origin ${deployBranch}`);
 
     // 清理临时目录
     process.chdir(__dirname);
