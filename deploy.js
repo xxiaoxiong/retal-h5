@@ -55,7 +55,11 @@ try {
     execSync('git init');
     execSync(`git checkout -b ${deployBranch}`);
 
-    // 复制构建文件 (使用自定义函数而不是cp命令)
+    // 添加远程仓库
+    const repoUrl = 'https://github.com/xxiaoxiong/retal-h5.git';
+    execSync(`git remote add origin ${repoUrl}`);
+
+    // 复制构建文件
     console.log('复制构建文件...');
     copyDir(buildDir, tempDir);
 
@@ -65,8 +69,9 @@ try {
 
     // 推送到GitHub
     console.log('准备推送到GitHub...');
-    const repoUrl = execSync('git config --get remote.origin.url', { cwd: __dirname }).toString().trim();
-    execSync(`git push -f ${repoUrl} ${deployBranch}`);
+    // 使用含有令牌的URL（替换为实际值）
+    const tokenUrl = 'https://xxiaoxiong:ghp_YOUR_ACTUAL_TOKEN_HERE@github.com/xxiaoxiong/retal-h5.git';
+    execSync(`git push -f ${tokenUrl} ${deployBranch}`);
 
     // 清理临时目录
     process.chdir(__dirname);
